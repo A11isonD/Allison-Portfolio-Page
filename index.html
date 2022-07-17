@@ -5,51 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Allison Dobbs' Portfolio Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 
 <body>
-
-    <header>
-        <div class="header-image">
-            <img src="" alt="Portfolio Photo">
-        </div>
-    </header>
-    <!--nav inside or outside of header?--> 
-    
-    <nav>
-        <div class="topnav">  <!--use section instead of div?-->
-            <ul>
-                <li><a href=" ">About Me</a></li>
-                
-                <li><a href=" ">Projects</a></li>
-
-                <li><a href=" ">Work Experience</a></li>
+     
+    <section> <!--contains nav and header-->  
+        <nav class="menu">
+            <a href="#About_Me">About Me</a>
                     
-                <li><a href=" ">Resume</a></li>
-
-                <li><a href=" ">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-
+            <a href="#Projects">Projects</a>
+    
+            <a href="#Work Experience">Work Experience</a>
+                        
+            <a href="#Resume">Resume</a>
+    
+            <a href="#Contact">Contact</a>
+        </nav>
+    </section>
+    
+    <section>
+        <header>
+             <!--contains title, img, blurb-->
+            <h1>Allison Dobbs</h1>
+            <div class="header-image">
+                <img src="Images/Portfolio-photo.jpeg" alt="Portfolio Photo">
+                <p>I am a front-end web developer based in Louisville, KY with skills in HTML, CSS, and JavaScript.</p>
+            </div>
+        </header>
+    </section>
+    
+    
+    
     <main>
-        <h1>Allison Dobbs</h1>
-
-        <h2>About Me</h2>
+        
+        <h2 id="About_Me">About Me</h2>
         <p>This is my story.  I am looking for a job.  You should hire me beccause ___.</p>
 
-        <h2>Projects</h2>
+        <h2 id="Projects">Projects</h2>
         <p>Here are some projects I've worked on.</p>
 
-        <h2>Work Experience</h2>
+        <h2 id="Work Experience">Work Experience</h2>
         <p>I've had a lot of different jobs.</p>
 
-        <h2>Resume</h2>
+        <h2 id="Resume">Resume</h2>
         <p>Look at my awesome resume.</p>
 
-        <h2>Contact</h2>
+        <h2 id="Contact">Contact</h2>
         <form action="  ">
             <label for="fname"></label>
             <input type="text" id="fname" name="fname">
@@ -64,9 +67,11 @@
             <input type="text" id="Your message" name="Your message">
         </form>
     </main>
-
-    <footer>
-
+<!--Put an href=#top somewhere down here to take user to the top of the page-->
+    
+<footer>
+        <!--Put email, phone here (I think)-->
+        <!--Need an email link-->
     </footer>
 
 </body>
