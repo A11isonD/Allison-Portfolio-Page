@@ -1,8 +1,67 @@
-.nav {
-    
+body {
+    margin-top: 0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+nav {
+    background-color: #f1faee
+}
+
+a {
+    color: #1d3557;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #457b9d ;
+}
+
+button#hamburgerBtn {
+    background: none;
+    border: none;
+    color: #1d3557;
+    font-size: 2.3rem;
+    cursor: pointer;
+    padding: 0 20px 0 2vw;
+}
+
+header {
+    background-color: #f1faee;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h1, h2 {
+    color: #e63946;
+    background-color: #f1faee;
 }
 
 img {
-max-width: 200px; 
-height: 200px; 
+    max-width: 125px; 
+    height: 125px; 
+    border-radius: 25px;
 }
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+p {
+    color: #1d3557;
+    background-color: #f1faee;
+    font-size: 1rem;
+}
+
+footer {
+    display: flex;
+}
+

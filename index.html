@@ -8,41 +8,37 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-
 <body>
-     
-    <div> <!--contains nav and header-->  
-        <nav class="menu">
-            <a href="#About_Me">About Me</a>
-                    
-            <a href="#Projects">Projects</a>
     
-            <a href="#Work_Experience">Work Experience</a>
-                        
-            <a href="#Resume">Resume</a>
-    
-            <a href="#Contact">Contact</a>
-        </nav>
-    </div>
-    
-    <div> <!--contains title, img, blurb-->
-        <header> 
-            <h1>Allison Dobbs</h1>
-            <div class="header-image">
-                <img src="Images/Portfolio-photo.jpeg" alt="Portfolio Photo">
-                <p>
-                    I am a front-end web developer based in Louisville, KY with skills in HTML, CSS, and JavaScript.
-                </p>
+    <header>
+        <h1>Allison Dobbs</h1>
+        <div class="header-image">
+            <img src="Images/Portfolio-photo.jpeg" alt="Portfolio Photo">
+        </div>
+        <nav class=" header-nav clearfix">
+            <div class="row limited">
+                <button id="hamburgerBtn">&#9776;</button>
+                    <ul id="primary-nav">
+                        <a href="#About_Me">About Me</a>
+                        <a href="#Projects">Projects</a>
+                        <a href="#Work_Experience">Work Experience</a>
+                        <a href="#Resume">Resume</a>
+                        <a href="#Contact">Contact</a>
+                    </ul>
             </div>
-        </header>
-    </div>
+        </nav>
+
+        <div>
+            <p>
+                I am a front-end web developer based in Louisville, KY with skills in HTML, CSS, and JavaScript.
+            </p>
+        </div>
+    </header> 
     
-    
-    
-    <main>
+    <main class="main">
         
         <h2 id="About_Me">About Me</h2>
-        <p>This is my story.  I am looking for a job.  You should hire me beccause ___.</p>
+        <p>I believe my transferable skills such as continuous learning, ___, ___ will be an asset to your organization.</p>
 
         <h2 id="Projects">Projects</h2>
         <p>Here are some projects I've worked on.</p>
@@ -51,7 +47,7 @@
         <p>I've had a lot of different jobs.</p>
 
         <h2 id="Resume">Resume</h2>
-        <p>Look at my awesome resume.</p>
+        <p>Look at my awesome resume.</p>  <!--Link to PDF resume?-->
 
         <h2 id="Contact">Contact</h2>
         <form action="mailto:allisonkdobbs@gmail.com" method="get">
@@ -71,9 +67,9 @@
 <!--Need Send and maybe Reset buttons-->
         </form>
     </main>
-<!--Put an href=#top somewhere down here to take user to the top of the page-->
     
     <footer>
+        
         <!--Put email, phone, LinkedIn, Github here (I think)-->        
     </footer>
 
