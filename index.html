@@ -8,46 +8,39 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body>   
     
-    <header>
-        <h1>Allison Dobbs</h1>
-        <div class="header-image">
-            <img src="Images/Portfolio-photo.jpeg" alt="Portfolio Photo">
-        </div>
-        <nav class=" header-nav clearfix">
-            <div class="row limited">
-                <button id="hamburgerBtn">&#9776;</button>
-                    <ul id="primary-nav">
-                        <a href="#About_Me">About Me</a>
-                        <a href="#Projects">Projects</a>
-                        <a href="#Work_Experience">Work Experience</a>
-                        <a href="#Resume">Resume</a>
-                        <a href="#Contact">Contact</a>
-                    </ul>
-            </div>
-        </nav>
-
+    <header class="header container" >
+        <h1>Allison Dobbs</h1> 
+        <h2>Web Developer</h2>
+        <button id="hamburgerBtn">&#9776;</button>    
+        <img class="img" src="images/OregonBeach.jpeg" alt="Oregon Beach">
+    
         <div>
-            <p>
-                I am a front-end web developer based in Louisville, KY with skills in HTML, CSS, and JavaScript.
-            </p>
+            <nav class="nav">
+                <ul id="primary-nav">
+                    <a href="#About_Me">About Me</a>
+                    <a href="#Projects">Projects</a>
+                    <a href="#Work_Experience">Work Experience</a>
+                    <a href="#Contact">Contact</a>
+                </ul>
+            </nav>
         </div>
-    </header> 
+    </header>
+    
     
     <main class="main">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         
         <h2 id="About_Me">About Me</h2>
-        <p>I believe my transferable skills such as continuous learning, ___, ___ will be an asset to your organization.</p>
+        <p>Mattis pellentesque id nibh tortor. Cras pulvinar mattis nunc sed blandit libero volutpat sed. Metus vulputate eu scelerisque felis. Cursus turpis massa tincidunt dui ut. Risus pretium quam vulputate dignissim. </p>
 
         <h2 id="Projects">Projects</h2>
-        <p>Here are some projects I've worked on.</p>
+        <p>Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Lectus vestibulum mattis ullamcorper velit. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Ac placerat vestibulum lectus mauris. </p>
 
         <h2 id="Work_Experience">Work Experience</h2>
-        <p>I've had a lot of different jobs.</p>
-
-        <h2 id="Resume">Resume</h2>
-        <p>Look at my awesome resume.</p>  <!--Link to PDF resume?-->
+        <p>Imperdiet dui accumsan sit amet nulla facilisi. Ac tortor dignissim convallis aenean et tortor at risus viverra. Tortor aliquam nulla facilisi cras fermentum. Arcu non sodales neque sodales ut etiam. Est pellentesque elit ullamcorper dignissim. </p>
 
         <h2 id="Contact">Contact</h2>
         <form action="mailto:allisonkdobbs@gmail.com" method="get">
@@ -59,12 +52,12 @@
 
             <label for="email"></label>
             <input type="email" placeholder="Enter your email..." id="email" name="email">
-<!--From Slack msg: take the input, validate the email address (it's in the correct format; give alert if it's not), and display the info on the page back to the user on a button click
-    to satisfy 1-2 JS features.-->
+From Slack msg: take the input, validate the email address (it's in the correct format; give alert if it's not), and display the info on the page back to the user on a button click
+    to satisfy 1-2 JS features
 
             <label for="Your_message"></label>
             <input type="text" placeholder="Your_message" id="Your_message" name="Your message">
-<!--Need Send and maybe Reset buttons-->
+<--Need Send and maybe Reset buttons-->
         </form>
     </main>
     
