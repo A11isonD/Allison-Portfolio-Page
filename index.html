@@ -30,8 +30,6 @@
     
     
     <main class="main">
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         
         <h2 id="About_Me">About Me</h2>
         <p>Mattis pellentesque id nibh tortor. Cras pulvinar mattis nunc sed blandit libero volutpat sed. Metus vulputate eu scelerisque felis. Cursus turpis massa tincidunt dui ut. Risus pretium quam vulputate dignissim. </p>
@@ -42,27 +40,39 @@
         <h2 id="Work_Experience">Work Experience</h2>
         <p>Imperdiet dui accumsan sit amet nulla facilisi. Ac tortor dignissim convallis aenean et tortor at risus viverra. Tortor aliquam nulla facilisi cras fermentum. Arcu non sodales neque sodales ut etiam. Est pellentesque elit ullamcorper dignissim. </p>
 
-        <h2 id="Contact">Contact</h2>
-        <form action="mailto:allisonkdobbs@gmail.com" method="get">
-            <label for="fname"></label>
-            <input type="text" placeholder="Enter your first name..." id="fname" name="fname" autofocus>
-
-            <label for="lname"></label>
-            <input type="text" placeholder="Enter your last name..." id="lname" name="lname">
-
-            <label for="email"></label>
-            <input type="email" placeholder="Enter your email..." id="email" name="email">
-From Slack msg: take the input, validate the email address (it's in the correct format; give alert if it's not), and display the info on the page back to the user on a button click
-    to satisfy 1-2 JS features
-
-            <label for="Your_message"></label>
-            <input type="text" placeholder="Your_message" id="Your_message" name="Your message">
-<--Need Send and maybe Reset buttons-->
-        </form>
+        <div class="container">
+            <h2 id="Contact">Get In Touch</h2>
+            <form action="mailto:allisonkdobbs@gmail.com" method="get">
+                <div class="first_name">
+                    <label for="first_name"></label>
+                    <input type="text" required placeholder="First name" id="firstname" name="firstname">
+                </div>
+                <br>
+                <div class="last_name">
+                    <label for="last_name"></label>
+                    <input type="text" placeholder="Last name" id="lastname" name="lastname">
+                </div>
+                <br>
+                <div class="email">
+                    <label for="email"></label>
+                    <input type="email" placeholder="Email" id="email" name="email">
+                </div>
+                <br>
+                <div class="Your_message">
+                    <label for="Your_message"></label><br>
+                    <textarea name="Your_message" id="Your_message" cols="30" rows="10" placeholder="Enter your message here..." required></textarea>
+                </div>
+                <br>
+                <div class="center">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>   <!--From Slack msg: take the input, validate the email address (it's in the correct format; give alert if it's not), and display the info on the page back to the user on a button click
+            to satisfy 1-2 JS features-->
     </main>
     
     <footer>
-        
+        <small>Copyright © 2022 Allison Dobbs.  All Rights Reserved.</small>
         <!--Put email, phone, LinkedIn, Github here (I think)-->        
     </footer>
 

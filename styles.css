@@ -82,6 +82,24 @@ p {
     margin: 1em;
 }
 
+.container {
+    border-radius: 4px;
+    text-align: center;
+    
+}
+
+input {
+    width: 75%;
+}
+
+textarea {
+    width: 75%
+}
+
+#Contact {
+    text-align: center;
+}
+
 footer {
     display: flex;
 }
