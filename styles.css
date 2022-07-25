@@ -1,17 +1,158 @@
+body {
+    font-family: sans-serif;    
+}
+
+h1, h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    background-color: ;
+}
+
 .grid-container-h1-h2header-hbgbutton {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50%, 50%;
+    background-color: #f9f9f9;
+}
+
+.grid-container-h1-h2 {
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    grid-template-rows: 1, 1fr;
+    background-color: #f9f9f9;
+}
+
+.grid-container-nav-headerh2 {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+    background-color: #f9f9f9;
 }
 
 
+.grid-item-1 {
+    justify-content: left;
+    font-size: 1.5em;
+    padding-top: 60px;
+    padding-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #f9f9f9;
+}
 
+.grid-item-2 {
+    justify-content: left;
+    font-size: 1.5em;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #f9f9f9;
+}
 
-
-
-.img {
+.grid-item-3 {
     display: grid;
-    width: 100%;
-    max-height: 100%
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    align-items: right;
+    margin-top: 60px;
+    margin-left: 150px;
+    margin-right: 0;
+    margin-bottom: 0;
+    background-color: #f9f9f9;
+}
+
+button#hamburgerBtn {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 2.4rem;
+    cursor: pointer;
+    padding: 0 30px 0 2vw;
+}
+
+nav {
+    background-color: #f9f9f9;
+}
+
+a {
+    list-style-type: none;
+    display: block;
+}
+
+
+.grid-item-4 {
+    justify-content: right;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    /*display: none;*/
+    background-color: #f9f9f9;
+    padding: 0;
+    /* -- make a new line if needed. nav ul {
+    margin: 0;
+    padding: 0;
+}*/
+}
+
+
+.grid-container-nav {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    justify-content: right;
+    background-color: #f9f9f9;
+
+}
+
+
+img {
+    display: grid;
+    max-width: 100%;
+    padding-top: 0;
+}
+
+.main {
+    text-align: center;
+}  
+
+.about_me_p {
+    background-color: #eaeef7;
+}
+
+.projects_p {
+    background-color: #f9f9f9;
     
 }
+
+.work_experience_p {
+    background-color: #eaeef7;
+}
+
+.container {
+    background-color: #f9f9f9;
+}
+
+
+
+
+    
+    /*width: 100%;
+    max-height: 100%;*/
+
+    /*grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;*/
+
+    /*grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);*/
+
+    /*width: 375px;
+    height: 300px;*/
+
+@media {
+
+}
+    
+
+
