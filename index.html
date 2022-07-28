@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Allison Dobbs' Portfolio Page</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif|Varela+Round">
 </head>
 
 <body>   
@@ -25,10 +26,11 @@
             <h2 class="grid-item-2">Web Developer</h2>
             <nav class="clearfix grid-item-4">
                 <ul id="primaryNav" class="nav-menu">
-                    <a href="#About_Me" class="active" class="hover">About Me</a>
-                    <a href="#Projects" class="active" class="hover">Projects</a>
-                    <a href="#Work_Experience" class="active" class="hover">Work Experience</a>
-                    <a href="#Contact" class="active" class="hover">Contact</a>
+                    <!--anchor tags are inline -side by side-->
+                    <a href="#About_Me" class="active hover">About Me</a>
+                    <a href="#Projects" class="active hover">Projects</a>
+                    <a href="#Work_Experience" class="active hover">Work Experience</a>
+                    <a href="#Contact" class="active hover">Contact</a>
                 </ul>
             </nav>
         </div>
@@ -44,7 +46,7 @@
             
             
             
-    <main class="main">
+    <main class="main container" >
         
            
         <div class="about_me_p">
@@ -62,35 +64,59 @@
             <p>Imperdiet dui accumsan sit amet nulla facilisi. Ac tortor dignissim convallis aenean et tortor at risus viverra. Tortor aliquam nulla facilisi cras fermentum. Arcu non sodales neque sodales ut etiam. Est pellentesque elit ullamcorper dignissim. </p>
         </div>    
         
+        
         <div class="container">
-            <h2 id="Contact">Get In Touch</h2>
-            <form action="mailto:allisonkdobbs@gmail.com" method="get">
-                <div class="first_name">
-                    <label for="first_name"></label>
-                    <input type="text" required placeholder="First name" id="firstname" name="firstname">
-                </div>
-                <br>
-                <div class="last_name">
-                    <label for="last_name"></label>
-                    <input type="text" placeholder="Last name" id="lastname" name="lastname">
+            <h2>Contact</h2>
+            <form action="mailto:allisonkdobbs@gmail.com" method="get"></form>
+                <div class="name">
+                    <label for="name"></label>
+                    <input type="text" placeholder="Name" id="name" name="name">
+                    <small class="error"></small>
                 </div>
                 <br>
                 <div class="email">
                     <label for="email"></label>
                     <input type="email" placeholder="Email" id="email" name="email">
+                    <small class="error"></small>
                 </div>
                 <br>
                 <div class="Your_message">
                     <label for="Your_message"></label><br>
-                    <textarea name="Your_message" id="Your_message" cols="30" rows="10" placeholder="Enter your message here..." required></textarea>
+                    <textarea name="Your_message" id="Your_message" cols="30" rows="10" placeholder="Enter your message here..."></textarea>
+                    <small class="error"></small>
                 </div>
                 <br>
-                <div class="Send_message_button">
-                    <input type="send_message" value="Send Message">
+                <div class="submit_button_container">
+                    <!--<button id="submit" type="submit">Send</button>-->
+                    <input type="submit" value="Send Message">
+                    <p id="success"></p>
                 </div>
             </form>
         </div>   <!--From Slack msg: take the input, validate the email address (it's in the correct format; give alert if it's not), and display the info on the page back to the user on a button click
             to satisfy 1-2 JS features-->
+
+            
+        <!--<h2 id="Contact">Get In Touch</h2>
+        <form action="mailto:allisonkdobbs@gmail.com" method="get">
+            <ul id="formFields">
+                <li>
+                    <label for="name"></label>
+                    <input type="text" placeholder="Name" id="name" name="user_name" required>
+                </li>    
+                <li>
+                    <label for="email"></label>
+                    <input type="email" placeholder="Email" id="email" name="user_email" required>
+                </li>
+                <li>
+                    <label for="Your_message"></label><br>
+                    <textarea name="Your_message" id="Your_message" cols="30" rows="10" placeholder="Enter your message here..." required></textarea>
+                </li>
+                <li class="button">
+                    <button type="submit">Send your message</button>
+                </li>
+            </ul>            
+        </form>-->
+        
     </main>
     
     <footer>
@@ -102,6 +128,7 @@
 <!--<script src="./utils.js"></script>
 <script src="./home.js"></script>-->
 <script src="menuToggle.js"></script>
+<script src="home.js"></script>
 </body>
 
 
