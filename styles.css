@@ -40,7 +40,7 @@ p {
 }
 
 
-/*.grid-container-h1-h2header-hbgbutton {
+.grid-container-h1-h2header-hbgbutton {
     --? do inline flex to get them side by side?--
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -134,7 +134,7 @@ a {
     text-decoration: none;
 }
 
-nav a.active {  /*or is it a.active?
+nav a.active {  /*or is it a.active?*/
     background-color: c7c7c7;
 }
 
@@ -312,9 +312,9 @@ footer {
     height: 300px;*/
 
 
-/*medium screen
+/*medium screen*/
 @media only screen and (min-width: 768px) {
-    /*nav button {
+    nav button {
         display: none;
     button#hamburgerBtn {
             display: none;
@@ -337,9 +337,9 @@ footer {
     
 }
 
-/*large screen
+/*large screen*/
 @media only screen and (min-width: 1024px) {
-    /*nav button {
+    nav button {
         display: none;
     button#hamburgerBtn {
         display: none;
@@ -373,14 +373,8 @@ footer {
         text-align: left;
     }
 
-
-
-    
-        
-    
-
 }
-*/
+
     
     
 
